@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
           'onError': this.onPlayerError.bind(this)
         }
       });
-    };   
+    };     
 
   }
 
@@ -89,16 +89,16 @@ export class AppComponent implements OnInit {
 
   show_chatbot() {
     console.log(event)
-    //FB.CustomerChat.showDialog();
   }
 
   hide_chatbot() {
     console.log(event)
-    //FB.CustomerChat.hideDialog();
   }
 
   send_message() {
     console.log(event)
   }
+
+
 
 }

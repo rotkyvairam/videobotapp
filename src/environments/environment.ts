@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  dialogflow: {
+    angularBot: '5a8656fcec84452cbe6c6abf68b6ed39'  }
 };
 
 /*
@@ -14,3 +16,4 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
