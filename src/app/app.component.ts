@@ -72,20 +72,41 @@ export class AppComponent implements OnInit {
     this.player.pauseVideo();
   }
 
+  inicio() {
+    console.log(event)
+    this.player.seekTo(0, true);
+  }
+
   avanzar1() {
     console.log(event)
-    this.player.seekTo(20, false);
+    this.player.seekTo(6, true);
   }
   
   avanzar2() {
     console.log(event)
-    this.player.seekTo(20, false);
+    this.player.seekTo(18, true);
   }
 
   avanzar3() {
     console.log(event)
-    this.player.seekTo(20, false);
+    this.player.seekTo(33, true);
   }
+
+  avanzar4() {
+    console.log(event)
+    this.player.seekTo(42, true);
+  }
+
+  avanzar5() {
+    console.log(event)
+    this.player.seekTo(49, true);
+  }
+
+  avanzar6() {
+    console.log(event)
+    this.player.seekTo(59, true);
+  }
+
 
   show_chatbot() {
     console.log(event)
