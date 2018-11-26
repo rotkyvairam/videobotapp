@@ -124,7 +124,7 @@ var AppComponent = /** @class */ (function () {
                 height: '280',
                 width: '640',
                 videoId: _this.video,
-                playerVars: { 'autoplay': 0, 'controls': 0 },
+                playerVars: { 'autoplay': 0, 'controls': 0, 'disablekb': 0 },
                 events: {
                     'onReady': _this.onPlayerReady.bind(_this),
                     'onStateChange': _this.onPlayerStateChange.bind(_this),
