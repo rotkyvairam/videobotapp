@@ -29,9 +29,11 @@ export class AppComponent implements OnInit {
       this.YT = window['YT'];
       //this.reframed = false;
       this.player = new window['YT'].Player('player', {
+        height: '280',
+        width: '640',
         videoId: this.video,
 
-        playerVars: { 'autoplay': 0, 'controls': 0 },          
+        playerVars: { 'autoplay': 0, 'controls': 0, 'disablekb':0 },          
         events: {
           'onReady': this.onPlayerReady.bind(this),
           'onStateChange': this.onPlayerStateChange.bind(this),
