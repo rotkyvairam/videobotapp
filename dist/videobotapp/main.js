@@ -121,6 +121,8 @@ var AppComponent = /** @class */ (function () {
             _this.YT = window['YT'];
             //this.reframed = false;
             _this.player = new window['YT'].Player('player', {
+                height: '280',
+                width: '640',
                 videoId: _this.video,
                 playerVars: { 'autoplay': 0, 'controls': 0 },
                 events: {
