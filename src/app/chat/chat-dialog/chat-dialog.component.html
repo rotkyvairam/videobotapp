@@ -1,17 +1,14 @@
-<h3>Hablemos sobre: Proposiciones</h3>
 
-<ng-container *ngFor="let message of messages | async">
+<div class="message_log" #scrollBottom>
+    <ng-container *ngFor="let message of messages | async">
+        <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot', 'to'  : message.sentBy === 'user' }">
+            {{ message.content }} 
+        </div>
+    </ng-container>
+</div>
 
-  <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
-                                    'to':   message.sentBy === 'user' }">
-    {{ message.content }}
-  </div>
-
-</ng-container>
-
-<label for="nameField">¿Que deseas saber?</label>
-
-<input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
-
-<button (click)="sendMessage()">Preguntar</button>
-
+<div>
+<!--  <label for="nameField">Preguntame</label> -->
+  <input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text" placeholder="Pregúntame" onfocus="placeHolder()">
+<!--  <button (click)="sendMessage()">></button> -->
+</div>

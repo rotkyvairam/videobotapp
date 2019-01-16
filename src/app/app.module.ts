@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { ChatModule } from './chat/chat.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+
 
 @NgModule({
   declarations: [
@@ -13,7 +16,8 @@ import { ChatModule } from './chat/chat.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ChatModule    
+    ChatModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
